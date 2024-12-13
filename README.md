@@ -1,6 +1,6 @@
 # rusty-book-manager-template
 
-これは書籍 `Rust による Web アプリケーション開発` のテンプレート https://github.com/rust-web-app-book/rusty-book-manager-template をコピーしてきた自分用の作業リポジトリである。
+これは書籍 `Rust による Web アプリケーション開発` のテンプレート https://github.com/rust-web-app-book/rusty-book-manager-template をコピーしてきた自分用の作業リポジトリである。  
 完成版は https://github.com/rust-web-app-book/rusty-book-manager を参照。
 
 ## テンプレートの内容
