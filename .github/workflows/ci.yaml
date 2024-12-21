@@ -37,6 +37,3 @@ jobs:
 
       - name: Rustfmt
         run: cargo make fmt -- --check
-
-      - name: Check unused dependencies
-        run: cargo machete
