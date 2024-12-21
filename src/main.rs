@@ -2,8 +2,8 @@ use std::net::{Ipv4Addr, SocketAddr};
 
 use anyhow::Result;
 use axum::{extract::State, http::StatusCode, routing::get, Router};
-use tokio::net::TcpListener;
 use sqlx::{postgres::PgConnectOptions, PgPool};
+use tokio::net::TcpListener;
 
 /// Test handler health-check that returns `200 OK` status code.
 #[tokio::test]
@@ -60,7 +60,6 @@ async fn health_check_db(State(db): State<PgPool>) -> StatusCode {
 
 #[tokio::main]
 async fn main() -> Result<()> {
-
     let conn_database_cfg = DatabaseConfig {
         host: "localhost".into(),
         port: 5432,
