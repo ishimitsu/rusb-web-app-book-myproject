@@ -13,7 +13,9 @@ impl AppRegistry {
     /// Constructor
     pub fn new(pool: ConnectionPool) -> Self {
         let health_check_repository = Arc::new(HealthCheckRepositoryImpl::new(pool.clone()));
-        Self { health_check_repository }
+        Self {
+            health_check_repository,
+        }
     }
 
     /// Getter for health_check_repository

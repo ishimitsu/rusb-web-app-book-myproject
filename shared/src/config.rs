@@ -7,8 +7,7 @@ pub struct AppConfig {
 impl AppConfig {
     /// Get configuration due to connect DataBase, from environment variables.
     pub fn new() -> Result<Self> {
-        let database =  DatabaseConfig
-        {
+        let database = DatabaseConfig {
             host: std::env::var("DATABASE_HOST")?,
             port: std::env::var("DATABASE_PORT")?.parse()?,
             username: std::env::var("DATABASE_USERNAME")?,
