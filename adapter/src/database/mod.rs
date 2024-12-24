@@ -22,6 +22,6 @@ impl ConnectionPool {
 }
 
 /// Create connection pool for PostgreSQL database.
-fn connect_database_with(config: &DatabaseConfig) -> ConnectionPool {
+pub fn connect_database_with(config: &DatabaseConfig) -> ConnectionPool {
     ConnectionPool(PgPool::connect_lazy_with(make_pg_connect_options(config)))
 }
