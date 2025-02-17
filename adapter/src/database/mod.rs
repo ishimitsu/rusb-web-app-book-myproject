@@ -17,6 +17,11 @@ fn make_pg_connect_options(cfg: &DatabaseConfig) -> PgConnectOptions {
 pub struct ConnectionPool(PgPool);
 
 impl ConnectionPool {
+    /// Create new `ConnectionPool` with `PgPool`.
+    pub fn new(pool: PgPool) -> Self {
+        Self(pool)
+    }
+
     /// Get reference of sqlx::PgPool.
     pub fn inner_ref(&self) -> &PgPool {
         &self.0
