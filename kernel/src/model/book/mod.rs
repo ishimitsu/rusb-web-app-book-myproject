@@ -1,10 +1,10 @@
-use super::id::BookId;
+use uuid::Uuid;
 
 pub mod event;
 
 #[derive(Debug)]
 pub struct Book {
-    pub id: BookId,
+    pub id: Uuid,
     pub title: String,
     pub author: String,
     pub isbn: String,
