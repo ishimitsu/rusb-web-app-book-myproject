@@ -21,6 +21,7 @@ async fn bootstrap() -> Result<()> {
 
     let app = Router::new()
         .merge(build_health_check_routers())
+        .merge(build_book_routers())
         .with_state(registry);
 
     // boot server
